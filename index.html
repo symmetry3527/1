@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>허은실</title>
+</head>
+<body>
+	<header>
+		<article>
+			<div class="thumbnail"></div>
+			<ul>
+				<li>
+					<a href="./doc3.html" target="_self">
+					     <span class="image">
+					     <img src="./img/mmmmmo.jpg">
+					     </span>
+					     <dir class="text_border">Monte Cristo</dir>
+					 </a>
+				</li>
+				<li>
+				   <a href="./doc4.html" target="_self">
+					     <span class="image">
+					     	<img src="./img/in.jpg">
+					     </span>
+					     <dir class="text_border">In The Heights</dir>
+					      </a>
+				</li>
+				<li>
+					<a href="./doc5.html" target="_self">
+					     <span class="image">
+					     	<img src="./img/se.jpg">
+					     </span>
+					     <dir class="text_border">Alfons mucha</dir>
+					     </a>
+				</li>
+			</ul>
+		</article>
+	</header>
+	<footer>
+
+	</footer>
+</body>
+
+<style>
+    a{text-decoration: none; color:white ; text-align: center; user-select:none; font-size: 55px; }
+    dir{display: inline-block;
+    	transition-property: font-size transform;
+    	transition-duration: 0.1s;
+    /*
+        transition-property: font-size transform;
+    	transition-duration: 0.1s;
+    */
+
+
+    }
+    dir:active{
+    	transform: translate(20px, 20px);
+    	font-size:2rem;
+    }
+    .text_border{
+    	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	    -moz-text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	    -webkit-text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    }
+    .image{
+    	user-select:none;
+    }
+    
+    main{width: 800px;}
+	
+	article .tumbnail{ display:block; width:100%; padding: 1em; }
+
+	article li{list-style: none; width: 1800px; background: white; float: left; height: 450px ; overflow: hidden; }
+	article ul li img{width: 100%}
+	article .image{ display: block; width: 100%; height: 110px;  }
+	article .text_border{display:block ; padding-top: 10px font-size: 32px; margin-top:70px;}
+
+
+/* Mobile */
+@media all
+   and (max-width: 600px){
+     main{ width:100%; background: red; }
+     article li{margin:0; padding:0; width:100;}
+   }
+
+/* Tablet */
+@media all and (min-width: 601px) and (max-width: 900px){
+
+} 
+
+
+
+</style>
